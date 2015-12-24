@@ -1,0 +1,29 @@
+The shell provides an interface to the UNIX system.
+In UNIX, there are two major types of shells :
+	The Bourne type shell - prompt is $
+		Bourne shell (sh)
+		Korn shell (ksh)
+		Bourne Again shell (bash)
+		POSIX shell (sh)
+	The C type shell - prompt is %
+		C shell (csh)
+		TENEX/TOPS C shell (tcsh)
+
+The original UNIX shell was written by Stephen R. Bourne in mid 1970s at AT & T
+Bell labs in New Jersey.
+
+The bourne shell is installed as /bin/sh on most versions of UNIX.
+
+Shell scripts are interpreted. They have .sh extention.
+The shebang construct : The beginning of any shell script must have the shebang
+construct to alert the system about shell script beginning. The shebang
+construct is :
+#!/bin/sh
+Next make the file executable :
+chmod +x filename.sh
+Then execute the file :
+./filename.sh
+
+Linux can run the scripts without the shebang construct. Also no need to make
+the script executable. Just type :
+bash filename.sh
